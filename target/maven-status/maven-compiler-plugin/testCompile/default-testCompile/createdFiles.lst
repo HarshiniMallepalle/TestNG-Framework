@@ -1,0 +1,12 @@
+com\training\testcase\UserMenuDropDownTest.class
+com\training\testcase\ContactsTest.class
+com\training\testcase\LeadsTest.class
+com\training\pages\CreateAccountPage.class
+com\training\pages\UserMenuDropDownPage.class
+com\training\pages\ContactsPage.class
+com\training\pages\LoginPage.class
+com\training\testcase\CreateOpportunitiesTest.class
+com\training\pages\CreateOppurtunitiesPage.class
+com\training\testcase\LoginTest.class
+com\training\pages\LeadsPage.class
+com\training\testcase\CreateAccountTest.class

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Salesforce" duration-ms="30407" started-at="2023-03-27T16:03:21 EDT" finished-at="2023-03-27T16:03:51 EDT">
+    <groups>
+    </groups>
+    <test name="Login" duration-ms="30407" started-at="2023-03-27T16:03:21 EDT" finished-at="2023-03-27T16:03:51 EDT">
+      <class name="com.training.testcase.LoginTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="beforeMethod" is-config="true" duration-ms="2657" started-at="2023-03-27T16:03:21 EDT" finished-at="2023-03-27T16:03:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="enterForgotPassword()[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="enterForgotPassword" duration-ms="1655" started-at="2023-03-27T16:03:24 EDT" finished-at="2023-03-27T16:03:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterForgotPassword -->
+        <test-method status="PASS" signature="AfterMethod(java.lang.reflect.Method)[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="AfterMethod" is-config="true" duration-ms="234" started-at="2023-03-27T16:03:25 EDT" finished-at="2023-03-27T16:03:25 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.training.testcase.LoginTest.enterForgotPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="beforeMethod" is-config="true" duration-ms="1788" started-at="2023-03-27T16:03:25 EDT" finished-at="2023-03-27T16:03:27 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="wrongUsernameAndPassword()[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="wrongUsernameAndPassword" duration-ms="495" started-at="2023-03-27T16:03:27 EDT" finished-at="2023-03-27T16:03:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongUsernameAndPassword -->
+        <test-method status="PASS" signature="AfterMethod(java.lang.reflect.Method)[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="AfterMethod" is-config="true" duration-ms="511" started-at="2023-03-27T16:03:28 EDT" finished-at="2023-03-27T16:03:28 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.training.testcase.LoginTest.wrongUsernameAndPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="beforeMethod" is-config="true" duration-ms="1819" started-at="2023-03-27T16:03:28 EDT" finished-at="2023-03-27T16:03:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginerrorMessage()[pri:1, instance:com.training.testcase.LoginTest@2a742aa2]" name="loginerrorMessage" duration-ms="489" started-at="2023-03-27T16:03:30 EDT" finished-at="2023-03-27T16:03:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginerrorMessage -->
+        <test-method status="PASS" signature="AfterMethod(java.lang.reflect.Method)[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="AfterMethod" is-config="true" duration-ms="199" started-at="2023-03-27T16:03:31 EDT" finished-at="2023-03-27T16:03:31 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.training.testcase.LoginTest.loginerrorMessage() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="beforeMethod" is-config="true" duration-ms="1858" started-at="2023-03-27T16:03:31 EDT" finished-at="2023-03-27T16:03:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login()[pri:2, instance:com.training.testcase.LoginTest@2a742aa2]" name="login" duration-ms="6632" started-at="2023-03-27T16:03:33 EDT" finished-at="2023-03-27T16:03:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AfterMethod(java.lang.reflect.Method)[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="AfterMethod" is-config="true" duration-ms="290" started-at="2023-03-27T16:03:39 EDT" finished-at="2023-03-27T16:03:40 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.training.testcase.LoginTest.login() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="beforeMethod" is-config="true" duration-ms="1864" started-at="2023-03-27T16:03:40 EDT" finished-at="2023-03-27T16:03:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkRememberMe()[pri:3, instance:com.training.testcase.LoginTest@2a742aa2]" name="checkRememberMe" duration-ms="9599" started-at="2023-03-27T16:03:41 EDT" finished-at="2023-03-27T16:03:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRememberMe -->
+        <test-method status="PASS" signature="AfterMethod(java.lang.reflect.Method)[pri:0, instance:com.training.testcase.LoginTest@2a742aa2]" name="AfterMethod" is-config="true" duration-ms="263" started-at="2023-03-27T16:03:51 EDT" finished-at="2023-03-27T16:03:51 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.training.testcase.LoginTest.checkRememberMe() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- com.training.testcase.LoginTest -->
+    </test> <!-- Login -->
+  </suite> <!-- Salesforce -->
+</testng-results>
