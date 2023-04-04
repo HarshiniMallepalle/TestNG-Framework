@@ -18,7 +18,11 @@ public class LoginTest extends BaseTest{
 	WebDriver driver;
 	LoginPage loginpage; 
 	String url,UserName,Password;
-	
+	/*
+	 * Testing changes in Git 
+	 * 
+	 * 
+	 */
 	@BeforeMethod
 	//@Parameters ({"browser"})
 	//public void beforMethod(String browser) throws IOException {
