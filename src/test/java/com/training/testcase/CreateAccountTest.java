@@ -65,6 +65,7 @@ public void CreateNewView() throws InterruptedException {
 	account.ClickOnSave();
 	account.validateAccountNameList(Name);
 }
+
 //TC12
 @Test
 public void editViewName() throws InterruptedException {
@@ -113,8 +114,14 @@ public void createAccountReport() throws InterruptedException {
     account.dateFieldDropDown();
     account.createDate();
     account.clickFromCalendarIcon();
-    account.clickFromTodayCalendar();//not working
-    //Still there Date picker
+    account.clickFromTodayCalendar();
+    account.clickToCalendarIcon();
+    account.clickToTodayCalendar();
+    account.clickSaveReport();
+    account.enterReportName(Name);
+    account.enterReportUniqueName(viewUniqueName);
+    account.saveAndRunReport();
+    account.validateReportText("Report Generation Status:");
 }
 
 //@AfterMethod

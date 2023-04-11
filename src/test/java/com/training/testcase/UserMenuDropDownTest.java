@@ -114,7 +114,7 @@ public class UserMenuDropDownTest extends BaseTest {
 		UserMenu.clickmySettingsTab();
 		UserMenu.clickCalenderRemindersLink();
 		UserMenu.clickActivityReminder();
-		UserMenu.clickOpenReminder();
+		UserMenu.clickOpenReminder(1);
 		UserMenu.ValidationText();
 	}
 

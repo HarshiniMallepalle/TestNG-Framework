@@ -184,13 +184,13 @@ public class UserMenuDropDownPage extends BasePage {
 	}
 
 //Switch to next window
-	public void clickOpenReminder() throws InterruptedException {
+	public void clickOpenReminder(int num) throws InterruptedException {
 		ExcplictWait(50, OpenReminder);
 		OpenReminder.click();
 		Thread.sleep(5000);
 		Set<String> handle = driver.getWindowHandles();
 		String[] indexOfWindows = handle.toArray(new String[handle.size()]);
-		driver.switchTo().window(indexOfWindows[1]);
+		driver.switchTo().window(indexOfWindows[num]);
 	}
 
 	public void clickActivityReminder() {
@@ -474,6 +474,8 @@ public class UserMenuDropDownPage extends BasePage {
 				// Thread.sleep(2000);
 				driver.close();
 				driver.switchTo().window(indexOfWindows[0]);
+				//driver.switchTo().parentFrame();
+
 			}
 	}
 

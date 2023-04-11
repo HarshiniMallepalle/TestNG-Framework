@@ -36,7 +36,7 @@ public class CreateOpportunitiesTest extends BaseTest {
 
 //TC15
 	@Test
-	public void CreateOpportunities() {
+	public void VerifyOpportunities() {
 		loginPage.enterUserName(UserName);
 		loginPage.enterPassword(Password);
 		loginPage.clickLoginButton();
@@ -65,7 +65,9 @@ public class CreateOpportunitiesTest extends BaseTest {
 		oppty.SelectLeadSource();
 		oppty.clickCampaignSearchIcon();
         oppty.newWindowCamping();
-		// still there
+        oppty.clickSaveOppty();
+		oppty.ValidateTitle("Opportunity: Saanvi ~ Salesforce - Developer Edition");
+
 	}
 
 //TC17

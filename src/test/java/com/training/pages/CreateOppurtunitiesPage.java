@@ -82,6 +82,14 @@ WebElement runreport;
 @FindBy(xpath="//span[@class='dateFormat']")
 WebElement closeDate;
 
+@FindBy(xpath="//td[@id='topButtonRow']//input[@name='save']")
+WebElement saveOppty;
+
+
+public void clickSaveOppty() {
+	ExcplictWait(5, saveOppty);
+	saveOppty.click();
+}
 public void clickCloseDate() {
 	ExcplictWait(5, closeDate);
 	closeDate.click();

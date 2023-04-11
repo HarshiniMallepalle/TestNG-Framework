@@ -34,7 +34,7 @@ WebElement AccountName;
 @FindBy(id="acc6")
 WebElement TypeDropDown;
 
-@FindBy(id="00N2w00000ZSDJJ")
+@FindBy(id="00N3x00000CuIkp")
 WebElement Priority;
 
 @FindBy(name="save")
@@ -112,12 +112,72 @@ WebElement accountView;
 @FindBy(id="ext-gen152")
 WebElement fromCalendarIcon;
 
-@FindBy(xpath="//td[@class='x-btn-mc']//button[@id='ext-gen283']")
+@FindBy(xpath="//button[@id='ext-gen281']")
 WebElement fromTodayCalendar;
+
+@FindBy(id="ext-gen154")
+WebElement toCalendarIcon;
+
+@FindBy(xpath="//button[@id='ext-gen296']")   
+WebElement toTodayCalendar;
+
+@FindBy(id="ext-gen49")
+WebElement saveReport;
+
+@FindBy(id="saveReportDlg_reportNameField")
+WebElement ReportName;                              
+
+@FindBy(id="saveReportDlg_DeveloperName")
+WebElement ReportUniqueName;
+
+@FindBy(id="dlgSaveAndRun")
+WebElement SaveAndRunReport;       
+
+@FindBy(xpath="//h2[text()='Report Generation Status:']")
+WebElement ReportText; 
+
+public void validateReportText(String a) throws InterruptedException {
+	Thread.sleep(2000);
+	String value=ReportText.getText();
+	Assert.assertEquals(value, a);
+}
+
+public void saveAndRunReport() throws InterruptedException {
+	Thread.sleep(2000);
+	ExcplictWait(5, SaveAndRunReport);
+	SaveAndRunReport.click();
+}
+
+public void enterReportUniqueName(String a) {
+	ExcplictWait(5, ReportUniqueName);
+	ReportUniqueName.sendKeys(a);
+}
+
+public void enterReportName(String a) {
+	ExcplictWait(5, ReportName);
+	ReportName.sendKeys(a);
+}
+
+public void clickSaveReport() {
+	ExcplictWait(5, saveReport);
+	saveReport.click();
+}
+
+
+public void clickToTodayCalendar() {
+	//driver.switchTo().alert();
+	ExcplictWait(30, toTodayCalendar);
+	toTodayCalendar.click();
+}
+
+public void clickToCalendarIcon() {
+	ExcplictWait(5, toCalendarIcon);
+	toCalendarIcon.click();
+}
 
 public void clickFromTodayCalendar() {
 	//driver.switchTo().alert();
-	ExcplictWait(10, fromTodayCalendar);
+	ExcplictWait(30, fromTodayCalendar);
 	fromTodayCalendar.click();
 }
 
