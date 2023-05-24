@@ -18,5 +18,13 @@
 </test>
 <!-- AfterTest -->
 
+<!-- BeforeTest -->
+<test name="Login">
+<classes>
+<class name="com.training.testcase.LeadsTest"/>
+</classes>
+</test>
+<!-- AfterTest -->
+
 </suite>
 <!-- AfterSuite -->

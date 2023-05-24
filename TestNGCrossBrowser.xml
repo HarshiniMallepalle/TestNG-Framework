@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- BeforeSuite -->
+
+<suite name="Salesforce"  parallel="tests" thread-count="2">
+
+<!-- BeforeTest -->
+<test name="Login">
+<parameter name="browser" value="Chrome"/>
+<classes>
+<class name="com.training.testcase.LoginTest"/>
+<class name="com.training.testcase.UserMenuDropDownTest"/>
+</classes>
+</test>
+<!-- AfterTest -->
+
+<test name="Account">
+<parameter name="browser" value="FireFox"/>
+<classes>
+<class name="com.training.testcase.LoginTest"/>
+<class name="com.training.testcase.UserMenuDropDownTest"/>
+</classes>
+</test>
+
+
+</suite>
+<!-- AfterSuite -->

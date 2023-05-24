@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Salesforce]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Salesforce]">
   <parameter name="browser" value="firefox"/>
   <listeners>
     <listener class-name="com.training.listerners.TestListener"/>
@@ -9,7 +9,6 @@
     <classes>
       <class name="com.training.testcase.LoginTest">
         <methods>
-          <include name="checkRememberMe"/>
           <include name="beforMethod"/>
           <include name="login"/>
         </methods>

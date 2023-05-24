@@ -1,21 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-10T16:39:24 EDT" name="Default suite" finished-at="2023-04-10T16:39:38 EDT" duration-ms="14117">
+  <suite name="Salesforce (0)" duration-ms="11369" started-at="2023-05-24T08:31:22 EDT" finished-at="2023-05-24T08:31:33 EDT">
     <groups>
     </groups>
-    <test started-at="2023-04-10T16:39:24 EDT" name="Default test" finished-at="2023-04-10T16:39:38 EDT" duration-ms="14117">
-      <class name="com.training.testcase.CreateAccountTest">
-        <test-method is-config="true" signature="BeforMethod()[pri:0, instance:com.training.testcase.CreateAccountTest@49c7b90e]" started-at="2023-04-10T16:39:24 EDT" name="BeforMethod" finished-at="2023-04-10T16:39:27 EDT" duration-ms="2741" status="PASS">
+    <test name="Login" duration-ms="11369" started-at="2023-05-24T08:31:22 EDT" finished-at="2023-05-24T08:31:33 EDT">
+      <class name="com.training.testcase.LoginTest">
+        <test-method status="PASS" signature="beforMethod(java.lang.String)[pri:0, instance:com.training.testcase.LoginTest@12c8a2c0]" name="beforMethod" is-config="true" duration-ms="2985" started-at="2023-05-24T08:31:22 EDT" finished-at="2023-05-24T08:31:25 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforMethod -->
-        <test-method signature="editViewName()[pri:0, instance:com.training.testcase.CreateAccountTest@49c7b90e]" started-at="2023-04-10T16:39:27 EDT" name="editViewName" finished-at="2023-04-10T16:39:38 EDT" duration-ms="11345" status="PASS">
+        </test-method> <!-- beforMethod -->
+        <test-method status="PASS" signature="loginerrorMessage()[pri:1, instance:com.training.testcase.LoginTest@12c8a2c0]" name="loginerrorMessage" duration-ms="529" started-at="2023-05-24T08:31:25 EDT" finished-at="2023-05-24T08:31:25 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editViewName -->
-      </class> <!-- com.training.testcase.CreateAccountTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginerrorMessage -->
+        <test-method status="PASS" signature="beforMethod(java.lang.String)[pri:0, instance:com.training.testcase.LoginTest@12c8a2c0]" name="beforMethod" is-config="true" duration-ms="1866" started-at="2023-05-24T08:31:25 EDT" finished-at="2023-05-24T08:31:27 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method status="PASS" signature="login()[pri:2, instance:com.training.testcase.LoginTest@12c8a2c0]" name="login" duration-ms="5983" started-at="2023-05-24T08:31:27 EDT" finished-at="2023-05-24T08:31:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.training.testcase.LoginTest -->
+    </test> <!-- Login -->
+  </suite> <!-- Salesforce (0) -->
+  <suite name="Salesforce" duration-ms="19097" started-at="2023-05-24T08:31:02 EDT" finished-at="2023-05-24T08:31:22 EDT">
+    <groups>
+    </groups>
+    <test name="Login" duration-ms="19097" started-at="2023-05-24T08:31:02 EDT" finished-at="2023-05-24T08:31:22 EDT">
+      <class name="com.training.testcase.LoginTest">
+        <test-method status="PASS" signature="beforMethod(java.lang.String)[pri:0, instance:com.training.testcase.LoginTest@7a9273a8]" name="beforMethod" is-config="true" duration-ms="4208" started-at="2023-05-24T08:31:02 EDT" finished-at="2023-05-24T08:31:07 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method status="PASS" signature="loginerrorMessage()[pri:1, instance:com.training.testcase.LoginTest@7a9273a8]" name="loginerrorMessage" duration-ms="589" started-at="2023-05-24T08:31:07 EDT" finished-at="2023-05-24T08:31:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginerrorMessage -->
+        <test-method status="PASS" signature="beforMethod(java.lang.String)[pri:0, instance:com.training.testcase.LoginTest@7a9273a8]" name="beforMethod" is-config="true" duration-ms="3873" started-at="2023-05-24T08:31:07 EDT" finished-at="2023-05-24T08:31:11 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method status="PASS" signature="login()[pri:2, instance:com.training.testcase.LoginTest@7a9273a8]" name="login" duration-ms="10375" started-at="2023-05-24T08:31:11 EDT" finished-at="2023-05-24T08:31:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.training.testcase.LoginTest -->
+    </test> <!-- Login -->
+  </suite> <!-- Salesforce -->
 </testng-results>

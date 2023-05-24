@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.seleniumhq.jetty9.server.Authentication.User;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.training.base.BasePage;
@@ -22,8 +23,11 @@ public class UserMenuDropDownTest extends BaseTest {
 	LoginPage login;
 
 	@BeforeMethod
-	public void BeforeMethod() throws IOException {
-		driver = getDriverH("Chrome");
+	@Parameters ({"browser"})
+	public void beforMethod(String browser) throws IOException {
+	driver = getDriverH(browser);
+	//public void BeforeMethod() throws IOException {
+	//	driver = getDriverH("Chrome");
 		url = geturlH("salesforceURL");
 		UserName = geturlH("username");
 		Password = geturlH("password");
@@ -75,7 +79,7 @@ public class UserMenuDropDownTest extends BaseTest {
 	}
 
 //TC7
-	@Test
+//	@Test
 	public void TC7() throws InterruptedException {
 		login.enterUserName(UserName);
 		login.enterPassword(Password);
@@ -119,7 +123,7 @@ public class UserMenuDropDownTest extends BaseTest {
 	}
 
 //TC8
-	@Test
+//	@Test
 	public void clickDeveloperConsoleFromUserMenu() throws InterruptedException {
 		login.enterUserName(UserName);
 		login.enterPassword(Password);

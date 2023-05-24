@@ -17,7 +17,7 @@ public class Screenshot {
 		//TakeScreenshot interface is used to take screenshot
 		TakesScreenshot screenshot = ((TakesScreenshot)driver);
 		
-		//File is stored as an object from screnshot
+		//File is stored as an object from screenshot
 		File srcFile =screenshot.getScreenshotAs(OutputType.FILE);
 		
 		//Date format
@@ -26,7 +26,7 @@ public class Screenshot {
 		
 		String filepath="C:\\Users\\harsh\\eclipse-workspace\\TestNGFramework\\Screenshots\\"+sTestcase+"-"+timeStamp+".jpeg";
 		
-		//create and destination file to store the screenshot object
+		//create the destination file to store the screenshot object
 		File destFile = new File(filepath);
 		
 		try {

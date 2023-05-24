@@ -31,7 +31,6 @@ public class LeadsTest extends BaseTest {
 		leadsPage = new LeadsPage(driver);
 		account = new CreateAccountPage(driver);
 		UserMenu = new UserMenuDropDownPage(driver);
-
 	}
 
 	// TC20

@@ -73,9 +73,7 @@ public class LeadsPage extends BasePage {
 	public void validateLeadsDropDown() {
 		String[] Ab = { "All Open Leads", "My Unread Leads", "Recently Viewed Leads", "Today's Leads",
 				"View - Custom 1", "View - Custom 2" };
-
 		for (int i = 0; i < leadsDD.size(); i++) {
-
 			if (leadsDD.get(i).getText().equalsIgnoreCase(Ab[i])) {
 			}
 		}
@@ -94,20 +92,16 @@ public class LeadsPage extends BasePage {
 	public void selectTodayLeads() throws InterruptedException {
 		Thread.sleep(5000);
 		for (int i = 0; i < leadsDD.size(); i++) {
-
 			if (leadsDD.get(i).getText().equalsIgnoreCase("Today's Leads")) {
 				leadsDD.get(i).click();
 			}
 		}
 	}
 
-	public void validateLeadsList(String a) throws InterruptedException {
-        String name="Today's Leads";
-		Thread.sleep(5000);
-		Select select = new Select(accountView);
-		select.selectByVisibleText(name);
-		Assert.assertEquals(name, a);
-
+	public void validateLeadsList(String a) {
+       	Select select = new Select(accountView);
+		String Actualvalue=select.getFirstSelectedOption().getText();
+		Assert.assertEquals(Actualvalue, a);
 	}
 	
 	public void validateLeadView(String a) throws InterruptedException {

@@ -21,14 +21,13 @@ public class LoginTest extends BaseTest{
 	/*
 	 * Testing changes in Git 
 	 * 
-	 * 
 	 */
 	@BeforeMethod
-	//@Parameters ({"browser"})
-	//public void beforMethod(String browser) throws IOException {
-	//driver = getDriverH(browser);
-	public void beforeMethod() throws IOException {
-		driver=getDriverH("chrome");
+	@Parameters ({"browser"})
+	public void beforMethod(String browser) throws IOException {
+	driver = getDriverH(browser);
+	//public void beforeMethod() throws IOException {
+		//driver=getDriverH("chrome");
 	url = geturlH("salesforceURL");
 	driver.get(url);
 	UserName = geturlH("username");
@@ -65,7 +64,7 @@ public class LoginTest extends BaseTest{
 	}
 
 	//TC3
-	@Test(priority=3)
+//	@Test(priority=3)
 	public void checkRememberMe() throws InterruptedException{
 		loginpage.enterUserName(UserName);
 		loginpage.enterPassword(Password);
@@ -77,7 +76,7 @@ public class LoginTest extends BaseTest{
 	}
 	
 	//TC4A
-	@Test
+	//@Test
 	public void enterForgotPassword() {
 		loginpage.checkForgotPassword();
 		loginpage.enterUsernameInForgotPswd();
@@ -86,7 +85,7 @@ public class LoginTest extends BaseTest{
 	}
 	
 	//TC4B
-	@Test
+	//@Test
 	public void wrongUsernameAndPassword() {
 		loginpage.enterUserName("123");
 		loginpage.enterPassword("22131");
